@@ -31,7 +31,8 @@
     "globals": [
       "https://cdn.polyfill.io/v2/polyfill.min.js",
       "https://static.startribune.com/assets/libs/pym.js/1.3.2/pym.v1.min.js",
-      "https://static.startribune.com/assets/libs/lodash/4.17.4/lodash.min.js"
+      "https://static.startribune.com/assets/libs/lodash/4.17.4/lodash.min.js",
+      "https://api.tiles.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.js"
     ]
   },
   "publishToken": "d3687876a2c3a172fad2337301685b7f",

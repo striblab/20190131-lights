@@ -21,6 +21,10 @@ section.container-lg {
 	max-width: 700px !important;
 }
 
+.mapboxgl-ctrl-logo, .mapboxgl-ctrl-attrib {
+	display:none !important;
+}
+
 p {
 	max-width: 520px;
 	font-size: 15px;

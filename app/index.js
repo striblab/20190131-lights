@@ -57,35 +57,35 @@ utils.autoEnablePym();
 
 // import * as mapboxgl from 'mapbox-gl';
 
-var mapStyle = {
-  "version": 8,
-  "name": "Dark",
-  "sources": {
-      "mapbox": {
-          "type": "vector",
-          "url": "mapbox://styles/shadowflare/cjp2sx7kc2f532sqaxosktgsu"
-      },
-      "overlay": {
-          "type": "image",
-          "url": "https://www.mapbox.com/mapbox-gl-js/assets/radar.gif",
-          "coordinates": [
-              [-80.425, 46.437],
-              [-71.516, 46.437],
-              [-71.516, 37.936],
-              [-80.425, 37.936]
-          ]
-      }
-  },
-  "sprite": "mapbox://sprites/mapbox/dark-v9",
-  "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
-  "layers": [
-      {
-          "id": "background",
-          "type": "background",
-          "paint": {"background-color": "#999999"}
-      }
-  ]
-};
+// var mapStyle = {
+//   "version": 8,
+//   "name": "Dark",
+//   "sources": {
+//       "mapbox": {
+//           "type": "vector",
+//           "url": "mapbox://styles/shadowflare/cjp2sx7kc2f532sqaxosktgsu"
+//       },
+//       "overlay": {
+//           "type": "image",
+//           "url": "https://www.mapbox.com/mapbox-gl-js/assets/radar.gif",
+//           "coordinates": [
+//               [-80.425, 46.437],
+//               [-71.516, 46.437],
+//               [-71.516, 37.936],
+//               [-80.425, 37.936]
+//           ]
+//       }
+//   },
+//   "sprite": "mapbox://sprites/mapbox/dark-v9",
+//   "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
+//   "layers": [
+//       {
+//           "id": "background",
+//           "type": "background",
+//           "paint": {"background-color": "#999999"}
+//       }
+//   ]
+// };
 
 mapboxgl.accessToken = 'pk.eyJ1Ijoic2hhZG93ZmxhcmUiLCJhIjoiS3pwY1JTMCJ9.pTSXx_LFgR3XBpCNNxWPKA';
 var map = new mapboxgl.Map({
@@ -116,16 +116,16 @@ map.on('load', function() {
 //   }); //, 'place-neighbourhood'
 
 
-map.addLayer({
-    id: 'raster-layer',
-    type: 'raster',
-    source: {
-      type: 'raster',
-      tiles: ['https://api.mapbox.com/v4/shadowflare.alb50mri/{z}/{x}/{y}.png?access_token=pk.eyJ1Ijoic2hhZG93ZmxhcmUiLCJhIjoiS3pwY1JTMCJ9.pTSXx_LFgR3XBpCNNxWPKA'],
-    },
-    minzoom: 0,
-    maxzoom: 22
-  });
+// map.addLayer({
+//     id: 'raster-layer',
+//     type: 'raster',
+//     source: {
+//       type: 'raster',
+//       tiles: ['https://api.mapbox.com/v4/shadowflare.alb50mri/{z}/{x}/{y}.png?access_token=pk.eyJ1Ijoic2hhZG93ZmxhcmUiLCJhIjoiS3pwY1JTMCJ9.pTSXx_LFgR3XBpCNNxWPKA'],
+//     },
+//     minzoom: 0,
+//     maxzoom: 22
+//   });
 });
 
 $(document).ready(function() {

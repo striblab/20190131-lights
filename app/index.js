@@ -87,6 +87,10 @@ utils.autoEnablePym();
 //   ]
 // };
 
+import BigMap from './bigmap.js';
+const bigmap = new BigMap("#country");
+bigmap.render();
+
 mapboxgl.accessToken = 'pk.eyJ1Ijoic2hhZG93ZmxhcmUiLCJhIjoiS3pwY1JTMCJ9.pTSXx_LFgR3XBpCNNxWPKA';
 var map = new mapboxgl.Map({
     container: 'map', 

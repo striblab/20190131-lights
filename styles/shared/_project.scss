@@ -140,6 +140,12 @@ h2 {
 }
 
 //cartogram styles
+.state-groups rect {
+	fill:#dddddd;
+	width:30px;
+	height:30px;
+}
+
 .state-groups:hover {
 	opacity: .5 !important;
 	cursor: pointer;

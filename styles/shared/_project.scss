@@ -141,24 +141,15 @@ h2 {
 
 //cartogram styles
 .state-groups rect {
-	fill:#dddddd;
 	width:30px;
 	height:30px;
-}
-
-.state-groups:hover {
-	opacity: .5 !important;
-	cursor: pointer;
+	pointer-events:none !important;
 }
 
 .state-groups text {
 	font-size: 9px !important;
 	fill: #fff !important;
-}
-
-.state-groups text:hover {
-	cursor: pointer;
-	pointer-events: all;
+	pointer-events:none !important;
 }
 
 text {

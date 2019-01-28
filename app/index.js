@@ -173,7 +173,7 @@ $(window).on("load", function() {
 
   var cartogram1 = {
     margin: {
-        top: 40,
+        top: 20,
         right: 140,
         bottom: 140,
         left: 60

@@ -19,7 +19,7 @@ class BigMap {
         for (var i = 0; i < dataCompare.length; i++) {
             if (Number(d.properties.GEOID) == Number(dataCompare[i].Id2)) {
                 var points = dataCompare[i].Bucket;
-                var color_scale = d3.scaleLinear().domain([4, 3, 2, 1]).range(['#D1E6E1', '#67B4C2', '#3580A3', '#0D4673']);
+                var color_scale = d3.scaleLinear().domain([4, 3, 2, 1]).range(['#f7f7f7', '#cccccc', '#969696', '#525252']);
                 return color_scale(points);
             }
         }
@@ -31,7 +31,7 @@ class BigMap {
             if (Number(d.properties.GEOID) == Number(dataCompare[i].Id2)) {
                 var points = dataCompare[i].Bucket;
                 var pct = dataCompare[i].PctNILF;
-                var color_scale = d3.scaleLinear().domain([4, 3, 2, 1]).range(['#D1E6E1', '#67B4C2', '#3580A3', '#0D4673']);
+                var color_scale = d3.scaleLinear().domain([4, 3, 2, 1]).range(['#f7f7f7', '#cccccc', '#969696', '#525252']);
                 return "<div class='countyName'>" + dataCompare[i].Geography + "</div><div class='number'><span class='legendary' style='background-color:" + color_scale(points) + ";'>" + d3.format(".0%")(pct) + "</span> of middle-aged men not in labor force</div>"
             }
         }

@@ -89,9 +89,14 @@ utils.autoEnablePym();
 
 import BigMap from './bigmap.js';
 import * as d3 from 'd3';
+import Chart from './chart.js';
 
+
+const chart1 = new Chart('#chartDNB');
 const bigmap = new BigMap("#country");
+
 bigmap.render();
+chart1.render();
 
 mapboxgl.accessToken = 'pk.eyJ1Ijoic2hhZG93ZmxhcmUiLCJhIjoiS3pwY1JTMCJ9.pTSXx_LFgR3XBpCNNxWPKA';
 var map = new mapboxgl.Map({
